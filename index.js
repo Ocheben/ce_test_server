@@ -21,6 +21,6 @@ app.post('/auth', (req, res) => {
     }
 });
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log('Example app listeeening on port 8000!')
 });
