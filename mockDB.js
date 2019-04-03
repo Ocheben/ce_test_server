@@ -9,16 +9,17 @@ const shipmentData = [
         
     },
     {
-        item: "Printer",
+        item: "Camera",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
-        assignee: "",
+        assignee: "Niccolò Machiavelli",
         status: "picked_up",
+        pickupDate: new Date().toDateString(),
         id: 1,
         bikerid:101
     },
     {
-        item: "Printer",
+        item: "Books",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
         assignee: "",
@@ -27,43 +28,50 @@ const shipmentData = [
         
     },
     {
-        item: "Printer",
+        item: "Documents",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
-        assignee: "",
+        assignee: "Niccolò Machiavelli",
         status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
         id: 3,
         bikerid:101
     },
     {
-        item: "Printer",
+        item: "Pizza",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
-        assignee: "",
+        assignee: "Niccolò Machiavelli",
         status: "assigned",
         id: 4,
         bikerid:101
     },
     {
-        item: "Printer",
+        item: "Files",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
-        assignee: "",
+        assignee: "Ernest Hemingway",
         status: "picked_up",
+        pickupDate: new Date().toDateString(),
         id: 5,
         bikerid: 102
     },
     {
-        item: "Printer",
+        item: "Laptop",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
-        assignee: "",
-        status: "deliverd",
+        assignee: "Ernest Hemingway",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
         id: 6,
         bikerid: 102
     },
     {
-        item: "Printer",
+        item: "Mobile Phone",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
         assignee: "",
@@ -71,7 +79,7 @@ const shipmentData = [
         status: "waiting"
     },
     {
-        item: "Printer",
+        item: "Bill",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
         assignee: "",
@@ -79,15 +87,16 @@ const shipmentData = [
         status: "waiting"
     },
     {
-        item: "Printer",
+        item: "Clothing Items",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
-        assignee: "",
+        assignee: "Friedrich Nietzsche",
         id: 9,
-        status: "waiting"
+        status: "waiting",
+        bikerid: 103
     },
     {
-        item: "Printer",
+        item: "Shoes",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
         assignee: "",
@@ -95,11 +104,377 @@ const shipmentData = [
         status: "waiting"
     },
     {
+        item: "Accessories",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Friedrich Nietzsche",
+        id: 11,
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        bikerid: 104
+    },
+    {
+        item: "Bags",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Aldous Huxley",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        id: 12,
+        bikerid: 104
+    },
+    {
+        item: "Watch",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Aldous Huxley",
+        status: "picked_up",
+        pickupDate: new Date().toDateString(),
+        id: 13,
+        bikerid:104
+    },
+    {
+        item: "Camera",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "George Orwell",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        id: 14,
+        bikerid:105
+        
+    },
+    {
+        item: "Documents",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "George Orwell",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        id: 15,
+        bikerid:105
+    },
+    {
+        item: "Desktop",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Aldous Huxley",
+        status: "assigned",
+        id: 16,
+        bikerid:104
+    },
+    {
+        item: "Clothing",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Ernest Hemingway",
+        status: "picked_up",
+        pickupDate: new Date().toDateString(),
+        id: 17,
+        bikerid: 102
+    },
+    {
+        item: "Food",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Ernest Hemingway",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        id: 18,
+        bikerid: 102
+    },
+    {
+        item: "Laptop",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 19,
+        status: "waiting"
+    },
+    {
+        item: "Mobile Phone",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 10,
+        status: "waiting"
+    },
+    {
+        item: "Charger",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Friedrich Nietzsche",
+        id: 21,
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        bikerid: 103
+    },
+    {
+        item: "Belt",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 22,
+        status: "waiting"
+    },
+    {
+        item: "Watch",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Friedrich Nietzsche",
+        id: 23,
+        status: "picked_up",
+        pickupDate: new Date().toDateString(),
+        bikerid: 104
+    },
+    {
+        item: "Ring",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "George Orwell",
+        status: "assigned",
+        id: 24,
+        
+    },
+    {
+        item: "Shoes",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Niccolò Machiavelli",
+        status: "picked_up",
+        pickupDate: new Date().toDateString(),
+        id: 25,
+        bikerid:101
+    },
+    {
+        item: "Purse",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        status: "waiting",
+        id: 26,
+        
+    },
+    {
+        item: "Paper",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Niccolò Machiavelli",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        id: 27,
+        bikerid:101
+    },
+    {
+        item: "Provisions",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Niccolò Machiavelli",
+        status: "assigned",
+        id: 28,
+        bikerid:101
+    },
+    {
+        item: "Water",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Ernest Hemingway",
+        status: "picked_up",
+        pickupDate: new Date().toDateString(),
+        id: 29,
+        bikerid: 102
+    },
+    {
+        item: "Batteries",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Ernest Hemingway",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        id: 30,
+        bikerid: 102
+    },
+    {
+        item: "MacBook Pro",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 31,
+        status: "waiting"
+    },
+    {
+        item: "HP Pavillion",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 32,
+        status: "waiting"
+    },
+    {
+        item: "Nike Air Max",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Friedrich Nietzsche",
+        id: 33,
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        bikerid: 103
+    },
+    {
+        item: "Fuse Box",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 34,
+        status: "waiting"
+    },
+    {
+        item: "Radio",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Friedrich Nietzsche",
+        id: 35,
+        status: "assigned",
+        bikerid: 104
+    },
+    {
+        item: "Monitor",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Aldous Huxley",
+        status: "assigned",
+        id: 36,
+        bikerid: 104
+    },
+    {
+        item: "Speakers",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Aldous Huxley",
+        status: "picked_up",
+        pickupDate: new Date().toDateString(),
+        id: 37,
+        bikerid:104
+    },
+    {
+        item: "Pizza",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        status: "waiting",
+        id: 38,
+        
+    },
+    {
+        item: "Perfume",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Niccolò Machiavelli",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        id: 39,
+        bikerid:105
+    },
+    {
+        item: "Clothes",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Aldous Huxley",
+        status: "assigned",
+        id: 40,
+        bikerid:104
+    },
+    {
+        item: "Sweater",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Ernest Hemingway",
+        status: "picked_up",
+        pickupDate: new Date().toDateString(),
+        id: 41,
+        bikerid: 102
+    },
+    {
+        item: "Jeans",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Ernest Hemingway",
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        id: 42,
+        bikerid: 102
+    },
+    {
+        item: "Hats",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 43,
+        status: "waiting"
+    },
+    {
+        item: "Socks",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 44,
+        status: "waiting"
+    },
+    {
+        item: "Acer",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Friedrich Nietzsche",
+        id: 45,
+        status: "assigned",
+        bikerid: 103
+    },
+    {
+        item: "Alien Ware",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "",
+        id: 46,
+        status: "waiting"
+    },
+    {
+        item: "Bottles",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "William Shakespeare",
+        id: 47,
+        status: "picked_up",
+        pickupDate: new Date().toDateString(),
+        bikerid: 110
+    },
+    {
+        item: "T Shirts",
+        origin: "Cologne, Germany",
+        destination: "Munich, Germany",
+        assignee: "Charles Dickens",
+        id: 48,
+        status: "delivered",
+        pickupDate: new Date().toDateString(),
+        deliverDate: new Date().toDateString(),
+        bikerid: 107
+    },
+    {
         item: "Printer",
         origin: "Cologne, Germany",
         destination: "Munich, Germany",
         assignee: "",
-        id: 11,
+        id: 49,
         status: "waiting"
     },
 ]
@@ -184,7 +559,14 @@ const users = [
         name: "Albert Einstien",
         role: "admin",
         shipments:shipmentData,
-        bikers
+        bikers,
+        dashStatus: {
+            shipments: 50,
+            delivered: 14,
+            picked_up: 10,
+            assigned: 8,
+            waiting: 18
+        }
     },
     ...bikers
 ];
